@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Kodi.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--Bootstrap css--%>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <a href="#" class="navbar-brand">Kodisha</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us </a>
+                    </li>
+
+                  </ul>
+                     <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server" >
+                            View Books
+                        </asp:LinkButton>
+                    </li>
+                  <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" >
+                            Login
+                        </asp:LinkButton>
+                    </li>
+                            <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" >
+                            SignUp
+                        </asp:LinkButton>
+                    </li>
+
+                  </ul>
+                </div>
+            </nav>
+
+        </div>
+        <%--Main Content Placeholder--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%--Footer --%>
+
+     </div>
+           <footer>
+               <p>&copy; All rights reserved. <a href="#" class="footerlinks" target="_blank">Kodisha</a></p>
+           </footer>
+    </form>
+
+    <%--Js and Jquery  --%>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <%--Popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--BootstrapJs --%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
