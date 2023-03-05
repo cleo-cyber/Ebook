@@ -9,7 +9,7 @@
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-
+    <link href="css/Custom.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -18,7 +18,7 @@
         <div>
             <nav class="navbar navbar-expand-lg navbar-light">
 
-                <a href="#" class="navbar-brand">Kodisha</a>
+                <a href="#" class="navbar-brand">Ebook</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -49,7 +49,11 @@
                             SignUp
                         </asp:LinkButton>
                     </li>
-
+                                            <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server" >
+                            Hello User
+                        </asp:LinkButton>
+                    </li>
                   </ul>
                 </div>
             </nav>
@@ -65,7 +69,30 @@
 
      </div>
            <footer>
-               <p>&copy; All rights reserved. <a href="#" class="footerlinks" target="_blank">Kodisha</a></p>
+              <div id="footer1" class="container-fluid">
+                  <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                          <p>
+                              <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">
+                                  &nbsp;
+                                  Admin Login
+                              </asp:LinkButton>
+                                <asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server">
+                                  &nbsp;
+                                  Author Management
+                              </asp:LinkButton>
+                            <asp:LinkButton class="footerlinks" ID="LinkButton7" runat="server">
+                                  &nbsp;
+                                  Publisher Management
+                              </asp:LinkButton>
+                         <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">
+                                  &nbsp;
+                                Member Management
+                              </asp:LinkButton>
+                          </p>
+                      </div>
+                  </div>
+              </div>
            </footer>
     </form>
 
